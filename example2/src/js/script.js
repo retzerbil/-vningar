@@ -1,23 +1,23 @@
-let firstName = "Andreas";
-let x = 5;
-let y = 10;
-let personNumber = 000119375;
+const pnr = "000119375";
+let sum = 0;
+for (let i = 0; i < pnr.length; i++) {
+  const currentNumber = +pnr[i];
 
-console.log(x+y);
-console.log(firstName + x);
-console.log(x*y);
-console.log(++x);
+  if (i % 2 === 0) {
+    // * 2
+    const prod = currentNumber * 2;
 
-function myFirstFunction(){
-    let answer = confirm("whats up yolo gang??");
-    console.log(answer);
-}
-
-function calcControlNumber(persNumber){
-    let pnr = toString(persNumber);
-    for (i in pnr) {
-        console.log(parseInt(pnr[i]));
+    if (prod > 9) {
+      sum += 1 + (prod % 10);
+    } else {
+      sum += prod;
     }
-    
-    calcControlNumber(2000119375);
+  } else {
+    // * 1
+    sum += currentNumber;
+  }
 }
+
+const controlNumber = 10 - (sum % 10);
+
+console.log(pnr + controlNumber);
