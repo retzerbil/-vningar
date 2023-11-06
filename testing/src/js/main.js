@@ -19,7 +19,7 @@ const setTest = new Map();
 setTest.set("0","hej");
 setTest.set("69", "testing!!");
 
-console.log(setTest);
+console.log(setTest); 
 
 
 //badass lambda test 8)
