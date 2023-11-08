@@ -1,11 +1,11 @@
 const testingDiv = document.getElementById("testingDiv");
-const nameTest = "Andreas";
+//const nameTest = "Andreas";
 const integers = [1,2,3,4,5,6,7,8,9,10];
 const coolAnimals = ["Cats", "Birds", "Penguins", "Seagulls", "Hedgehogs"];
 
 function myLoadFunction(){
-
-    testingDiv.innerHTML =  nameTest.length;
+    const temp="Andreas";
+    testingDiv.innerHTML =  temp.length;
 }
 
 for (let i = 0; i <= nameTest.length-1; i++) {

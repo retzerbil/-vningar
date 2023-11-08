@@ -22,7 +22,7 @@ setTest.set("69", "testing!!");
 console.log(setTest); 
 
 
-//badass lambda test 8)
+//badass lambda test B)
 const bS = () => {
     if(num.value >100){
         console.log("stort");
@@ -33,8 +33,15 @@ const bS = () => {
     }
 }
 
-myButton.addEventListener("click", bS);
+//lambda med ? operator B) feettt coolt ju
+const bs2 = () => {
+    num.value>100 ? textDiv.innerText="stort":textDiv.innerText="litet";
+}
 
+myButton.addEventListener("click", bs2);
+
+
+1+2==3 ? console.log("ja"):console.log("nej");
 
 /* metod innan lambda test
 function bigSmall(){
