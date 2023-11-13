@@ -23,6 +23,7 @@ console.log(setTest);
 
 
 //badass lambda test B)
+/*
 const bS = () => {
     if(num.value >100){
         console.log("stort");
@@ -32,6 +33,7 @@ const bS = () => {
         textDiv.innerText = "litet";
     }
 }
+*/
 
 //lambda med ? operator B) feettt coolt ju
 const bs2 = () => {
@@ -53,5 +55,28 @@ function bigSmall(){
         textDiv.innerText = "litet";
     }
 }
-
 */
+
+const numArray = [1,2,3,4,5,6,7,8,9,10];
+
+console.log(numArray);
+numArray.forEach(value => {
+    value+=value;
+    console.log(value);
+});
+
+const guess = document.getElementById("num2");
+const check = document.getElementById("button2");
+const rightAnswer = 10;
+
+const checkAnswer = () =>{
+    parseInt(guess.value)===rightAnswer ? console.log("rätt!!!") : console.log("feeeellll!");
+}
+
+check.addEventListener("click", checkAnswer);
+
+
+
+const numbers = [563,432,190];
+const newNumbers = numbers.map(Math.sqrt);
+console.log(newNumbers);
