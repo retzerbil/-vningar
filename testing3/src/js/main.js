@@ -1,6 +1,13 @@
-const Cat = {name: "meowy", color: "black"};
-class Dog {name = "woff"; color = "brown";};
+const Cat ={name:"meow",color:"black"};
 
-console.log(Cat);
-console.log(Dog);
+localStorage.setItem("1","halo :))");
 
+localStorage.setItem("coolestCat","Lizie");
+
+localStorage.setItem("test",JSON.stringify(Cat));
+
+console.log(localStorage.getItem("1"));
+
+console.log(localStorage.getItem("coolestCat"));
+
+console.log(localStorage.getItem("test"));
